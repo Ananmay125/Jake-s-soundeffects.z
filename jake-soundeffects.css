@@ -9,6 +9,7 @@ audio {
 @media (width >= 1366px){
     audio {
         width: 1000px;
+        left: 300px;
     }
 } 
 
