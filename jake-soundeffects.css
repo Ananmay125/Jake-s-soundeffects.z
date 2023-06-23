@@ -1,6 +1,9 @@
-
 body {
         background-color: black;
+}
+
+audio {
+        text-allign:center;
 }
 
 @media (width >= 1366px){
@@ -22,8 +25,4 @@ p {
     color: greenyellow;
     text-align: center;
     font-family: courier, courier new, serif;
-}
-
-.sound {
-    text-align: center;
 }
