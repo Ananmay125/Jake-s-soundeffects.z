@@ -1,46 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, intial-scale:1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake Soundeffects</title>
-    <link rel="stylesheet" href="jake-soundeffects.css">
+<!--     <link rel="stylesheet" href="jake-soundeffects.css"> -->
     <link rel="icon" type="image/x-icon" href="Images/Jake Favicon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
+
   <body>
-    <h1>Jake soundeffects</h1>
-    <p><mark><b> soundtracs are the original sounds made by Jake Kavalam and Jacob Thomas.</b></mark></p>
-<main class="mains">
-    <div>
-    <audio controls autoplay>
-      <source src="audio/ii (1).ogg" type="audio/mpeg">
-    </audio>
-    <audio controls autoplay>
-      <source src="audio/ii (2).ogg" type="audio/mpeg">
-    </audio>
-    <audio controls autoplay>
-      <source src="audio/ii (3).ogg" type="audio/mpeg">
-    </audio>
-    <audio controls autoplay>
-      <source src="audio/ii (4).ogg" type="audio/mpeg">
-    </audio>
-    <audio controls autoplay>
-      <source src="audio/ii (5).ogg" type="audio/mpeg">
-    </audio>
-    <audio controls autoplay>
-      <source src="audio/ii (6).ogg" type="audio/mpeg">
-    </audio>
-    <audio controls autoplay>
-      <source src="audio/ii (7).ogg" type="audio/mpeg">
-    </audio>
+    <nav>
+      <ul>
+        <h2 class="heading-nav">Jake Soundeffects</h2>
+        <li class="ul-list"><a href="index.html">Home</a></li>
+        <li class="ul-list"><a href="trending.html">Trending</a></li>
+        <li class="ul-list"><a href="most_listened.html">Most Listened</a></li>
+        <li class="ul-list"><a href="legacy.html">Legacy Music</a></li>
+        <img class="mode" src="Images/Jake Favicon.png" alt="dark-light-mode">
+      </ul>
+    </nav>
+  <!-- <p><mark><b> soundtracs are the original sounds made by Jake Kavalam and Jacob Thomas.</b></mark></p> -->
+
+
+  <main>
+      <div class="hero-section">
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+          <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+        </video>
+        <h1 class="Welcome-text">Welcome to <span>Jake Soundeffects</span>, <br> where you can experience <span id="typed">peak</span>music</h1>
+        <div class="side-panel">
+          <audio controls>
+            <source src="audio/suno_ai/jake is a guay negar (1).mp3" type="audio/mpeg">
+          </audio>
+          <audio controls>
+            <source src="audio/suno_ai/Jake's Journey (1).mp3" type="audio/mpeg">
+          </audio>
+          <audio controls>
+            <source src="audio/suno_ai/jake is a guay negar.mp3" type="audio/mpeg">
+          </audio>
+          <audio controls>
+            <source src="audio/suno_ai/Jake is Free (1).mp3" type="audio/mpeg">
+          </audio>
+          <audio controls>
+            <source src="audio/legacy_music/ii (5).ogg" type="audio/mpeg">
+          </audio>
+          </div>
+      </div>
+
+      <div class="Audio-list">
+
+          <h2 class="top-text">Top Most Played Songs</h2>
+          <p class="song-name">Jake is guay negar</p>
+          <audio class="audio-items" controls autoplay>
+            <source src="audio/suno_ai/jake is a guay negar (1).mp3" type="audio/mpeg">
+          </audio>
+          <p class="song-name">Jake's Journey</p>
+          <audio class="audio-items" controls autoplay>
+            <source src="audio/suno_ai/Jake's Journey (1).mp3" type="audio/mpeg">
+          </audio>
+          <p class="song-name">Jake is guay niquer (pop edition)</p>
+          <audio class="audio-items" controls autoplay>
+            <source src="audio/suno_ai/jake is a guay negar.mp3" type="audio/mpeg">
+          </audio>
+          <p class="song-name">Jake is free</p>
+          <audio class="audio-items" controls autoplay>
+            <source src="audio/suno_ai/Jake is Free (1).mp3" type="audio/mpeg">
+          </audio>
+      </div>
+  </main>
+
+  <footer>
+    <div class="footer-heading-div">
+      <h2 class="footer-heading">Jake Soundeffects</h2>
+      <img class="footer-logo" src="./Images/Jake Favicon.png" alt="logo"> 
     </div>
-</main>
-<footer>
-     <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" style="text-decoration: none; color: greenyellow; font-size: 15px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">CLICK ME!!</a>
-     <img style="width: 100px;" src="Images/trollface-troll.gif" alt="Trolled boi">
-     <img src="Images/ttu.gif" alt="rock-bottom">
-     <br>
-     <a href="about_us.html" class="about-link">About us</a>
-</footer>
+    <ul class="footer-list-container">
+      <li class="footer-list"></li>
+      <li class="footer-list">License</li>
+      <li class="footer-list"><a class="footer" href="/about_us.html">About Us</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ['Peak', 'Epic', 'Elite'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    });
+  </script>
+
   </body>
 </html>
 

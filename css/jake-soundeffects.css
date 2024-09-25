@@ -1,0 +1,65 @@
+/* body {
+        background-color: black;
+}
+
+@media (width >= 1366px){
+    audio {
+        width: 1000px;
+    }
+} 
+
+h1 {
+    font-size: 60px;
+    color: greenyellow;
+    text-align: center;
+    font-family:cursive;
+}
+
+
+p {
+    font-size: 1.5rem;
+    color: greenyellow;
+    text-align: center;
+    font-family: courier, courier new, serif;
+}
+
+main.mains {
+    text-align: center;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(248, 44, 44);
+  
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: white;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: white;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #B1D4E0;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: black;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: black;
+}
+
+.about-link {
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */

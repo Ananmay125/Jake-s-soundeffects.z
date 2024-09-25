@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale:1.0">
+    <title>Jake Soundeffects</title>
+<!--     <link rel="stylesheet" href="jake-soundeffects.css"> -->
+    <link rel="icon" type="image/x-icon" href="Images/Jake Favicon.png">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <h2 class="heading-nav">Jake Soundeffects</h2>
+        <li class="ul-list"><a href="index.html">Home</a></li>
+        <li class="ul-list"><a href="trending.html">Trending</a></li>
+        <li class="ul-list"><a href="most_listened.html">Most Listened</a></li>
+        <li class="ul-list"><a href="legacy.html">Legacy Music</a></li>
+        <img class="mode" src="Images/Jake Favicon.png" alt="dark-light-mode">
+      </ul>
+    </nav>
+    <audio id ="sigma" src="audio/legacy_music/Among Us Drip Theme Song Original (Among Us Trap Remix _ Amogus Meme Music).mp3"></audio>
+    <button class="play-pause" onclick="Playpause()"></button>
+    <script>
+        let audio = document.getElementById("sigma")
+        let button = document.querySelector("play-pause")
+
+        function Playpause(){
+            if (audio.paused){
+                audio.play();
+                button.classList.add("paused");
+            }
+            else{
+                audio.pause();
+                button.classList.remove("paused")
+            }
+        }
+    </script>
+
+  </body>
