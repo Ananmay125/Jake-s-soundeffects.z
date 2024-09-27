@@ -262,3 +262,20 @@ a.footer{
     color: white;
     font-weight: 100;
 }
+
+.quote-container{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(21, 26, 71);
+}
+
+#quote{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    color: white;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    text-align: center;
+}
