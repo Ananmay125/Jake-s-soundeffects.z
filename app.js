@@ -8,8 +8,32 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + "/index.html");
 });
 
+app.get('/trending', (req, res)=>{
+    res.sendFile(__dirname + "/trending.html");
+});
+
+app.get('/most_listened', (req, res)=>{
+    res.sendFile(__dirname + "/most_listened.html");
+});
+
+app.get('/index', (req, res)=>{
+    res.sendFile(__dirname + "/index.html");
+});
+
+app.get('/home', (req, res)=>{
+    res.sendFile(__dirname + "/index.html");
+});
+
 app.get('/legacy', (req, res)=>{
     res.sendFile(__dirname + "/legacy.html");
+});
+
+app.get('/about_us', (req, res)=>{
+    res.sendFile(__dirname + "/about_us.html");
+});
+
+app.get('/license', (req, res)=>{
+    res.sendFile(__dirname + "/license.html");
 });
 
 app.listen(PORT, (error) =>{

@@ -17,6 +17,7 @@ a{
 nav{
     display: flex;
     justify-content: center;
+    background-color: #181818;
 }
 
 .heading-nav{
@@ -164,29 +165,6 @@ audio::-webkit-media-controls-current-time-display {
     width: 590px;
 }
 
-.play-pause{
-    background-image: url("../Images/play.png");
-    background-size: cover;
-    width: 50px;
-    height:50px;
-    cursor:pointer;
-    background-color: #181818;
-    padding: 0px;
-    border: 0px;
-}
-
-.play-pause.paused{
-    background-image: url("../Images/pause.png");
-    background-size: cover;
-    width: 50px;
-    height:50px;
-    cursor:pointer;
-    background-color: #181818;
-    padding: 0px;
-    border: 0px;
-
-}
-
 #typed{
     color: rgb(5, 0, 70);
 }
@@ -279,3 +257,8 @@ a.footer{
     padding-bottom: 30px;
     text-align: center;
 }
+
+/* .cover-image{
+    width: 50px;
+    height: 80px;
+} */
