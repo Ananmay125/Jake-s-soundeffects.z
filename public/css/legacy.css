@@ -1,0 +1,9 @@
+#Playpausebutton{
+    width:10px;
+    height:10px;
+    padding:0px;
+    cursor:pointer;
+    border:none;
+    background-size: cover;
+    background-image: url("iladdlater");
+}

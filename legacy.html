@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- also bro just clean up the code like if u can -->
   <head>
     <meta name="viewport" content="width=device-width, intial-scale:1.0">
     <title>Jake Soundeffects</title>
 <!--     <link rel="stylesheet" href="jake-soundeffects.css"> -->
     <link rel="icon" type="image/x-icon" href="Images/Jake Favicon.png">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/legacy.css">
   </head>
   <body>
     <nav>
@@ -18,22 +18,12 @@
         <img class="mode" src="Images/Jake Favicon.png" alt="dark-light-mode">
       </ul>
     </nav>
-    <audio id ="sigma" src="audio/legacy_music/Among Us Drip Theme Song Original (Among Us Trap Remix _ Amogus Meme Music).mp3"></audio>
-    <button class="play-pause" onclick="Playpause()"></button>
+    <audio id="sigma" src="public/audio/legacy_music/Among Us Drip Theme Song Original (Among Us Trap Remix _ Amogus Meme Music).mp3"></audio>
+    <button id ="sigmabutton"></button>
     <script>
-        let audio = document.getElementById("sigma")
-        let button = document.querySelector("play-pause")
-
-        function Playpause(){
-            if (audio.paused){
-                audio.play();
-                button.classList.add("paused");
-            }
-            else{
-                audio.pause();
-                button.classList.remove("paused")
-            }
-        }
+      const audio = document.getElementById("sigma")
+      const button = document.getElementById("sigmabutton")
+      
+      button
     </script>
-
   </body>
