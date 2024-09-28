@@ -7,3 +7,58 @@
     background-size: cover;
     background-image: url("iladdlater");
 }
+
+@media screen and (max-width: 1000px) {
+    .search-box{
+        display: none;
+    }
+
+    .Welcome-text{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .Welcome-text{
+        margin-left: 0;
+    }
+
+    .side-panel{
+        display: none;
+    }
+
+    .quote-container{
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .ul-list{
+        display: none;
+    }
+
+    .mode{
+        display: none;
+    }
+
+    .heading-nav{
+        text-align: center;
+        margin-left: 112px;
+    }
+
+    ul{
+        width: 100%;
+    }
+
+    .ul-icon{
+        display: block;
+    }
+
+    .responsive-ul{
+        display: flex;
+    }
+
+    .mode2{
+        display: block;
+    }
+}

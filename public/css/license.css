@@ -49,6 +49,15 @@ ul{
     font-size: 15px;
 }
 
+.ul-icon{
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-right: 9px;
+    margin-left: 12px;
+}
+
 .ul-list:hover{
     background-color: rgb(35, 145, 255);
 }
@@ -79,6 +88,26 @@ ul{
     margin-top: 10px;
     margin-right: 9px;
     margin-left: 25px;
+}
+
+.mode2{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 9px;
+    margin-left: 25px;
+    display: none;
+}
+
+.responsive-ul{
+    list-style-type: none;
+    display: none;
+    justify-content: center;
+    justify-items: center;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 10px;
+    padding-left: 0;
 }
 
 .heading{
@@ -125,4 +154,59 @@ footer{
     margin-bottom: 0;
     background-color: lightblue;
     height: 250px;
+}
+
+@media screen and (max-width: 1000px) {
+    .search-box{
+        display: none;
+    }
+
+    .Welcome-text{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .Welcome-text{
+        margin-left: 0;
+    }
+
+    .side-panel{
+        display: none;
+    }
+
+    .quote-container{
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .ul-list{
+        display: none;
+    }
+
+    .mode{
+        display: none;
+    }
+
+    .heading-nav{
+        text-align: center;
+        margin-left: 112px;
+    }
+
+    ul{
+        width: 100%;
+    }
+
+    .ul-icon{
+        display: block;
+    }
+
+    .responsive-ul{
+        display: flex;
+    }
+
+    .mode2{
+        display: block;
+    }
 }
