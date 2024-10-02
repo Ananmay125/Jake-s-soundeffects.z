@@ -6,7 +6,7 @@
 }
 
 .audio-name{
-    color: white;
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     height: fit-content;
@@ -16,7 +16,7 @@
 }
 
 .audio-artist-name{
-    color: white;
+    color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 200;
     height: fit-content;
@@ -35,7 +35,7 @@
 }
 
 .audio-item-div:hover{
-    background-color: hsla(0,0%,100%,.3);
+    background-color: hsla(0, 26%, 14%, 0.3);
 }
 
 .audio-items-name-div{
@@ -59,7 +59,7 @@
     display: flex;
     justify-content: left;
     border-radius: 5px;
-    background-color: black;
+    background-color: white;
 }
 
 .audio-player-div-container{

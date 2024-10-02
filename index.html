@@ -6,9 +6,10 @@
 <!--     <link rel="stylesheet" href="jake-soundeffects.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@500&family=Caveat:wght@700&family=Josefin+Sans:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Images/Jake Favicon.png">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/audio-player.css">
+    <link id="main-stylesheet" rel="stylesheet" href="css/index.css">
+    <link id="sec-stylesheet" rel="stylesheet" href="css/audio-player.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/4c8eb02460.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -19,7 +20,7 @@
         <li class="ul-list"><a href="/trending">Trending</a></li>
         <li class="ul-list"><a href="/most_listened">Most Listened</a></li>
         <li class="ul-list"><a href="/legacy">Legacy Music</a></li>
-        <img class="mode" src="Images/light-dark/theme-light.svg" alt="dark-light-mode">
+        <img class="mode" id="themeToggle" src="Images/light-dark/theme-light.svg" alt="dark-light-mode">
         <input class="search-box" type="text" placeholder="Search..">
       </ul>
       <ul class="responsive-ul">
@@ -49,23 +50,68 @@
           </video>
           <h1 class="Welcome-text">Welcome to <span>Jake Soundeffects</span>, <br> where you can experience <span id="typed"></span>music</h1>
           <div class="side-panel">
-            <audio controls>
+            <img class="cover-image-side-panel" src="Images/Cover-Images/big_on_internet.jpg">
+            <h2 class="audio-name-side-panel">Jake is a guay negar</h2><br>
+            <p class="audio-artist-name-side-panel">Aizen, Suno AI</p>
+            <div class="controls">
+              <div><i class="fa-solid fa-backward"></i></div>
+              <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+              <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+            <audio id="song">
               <source src="audio/suno_ai/jake is a guay negar (1).mp3" type="audio/mpeg">
             </audio>
-            <audio controls>
-              <source src="audio/suno_ai/Jake's Journey (1).mp3" type="audio/mpeg">
-            </audio>
-            <audio controls>
-              <source src="audio/suno_ai/jake is a guay negar.mp3" type="audio/mpeg">
-            </audio>
-            <audio controls>
-              <source src="audio/suno_ai/Jake is Free (1).mp3" type="audio/mpeg">
-            </audio>
-            <audio controls>
-              <source src="audio/jonlker/Jonkler why so serious beatbox.mp3" type="audio/mp3">
-            </audio>
-            </div>
+            <input type="range" value="0" id="progress" min="0" max="100">            
+          </div>
         </div>
+
+        <script>
+          // Get the toggle button (mode2 image)
+          const themeToggle = document.getElementById('themeToggle');
+          const mainStylesheet = document.getElementById('main-stylesheet');
+          const secStylesheet = document.getElementById('sec-stylesheet');
+      
+          // Function to toggle dark mode
+          function toggleTheme() {
+              document.body.classList.toggle('dark-mode');
+      
+              if (document.body.classList.contains('dark-mode')) {
+                  mainStylesheet.href = "css/light-mode/index.css";
+                  secStylesheet.href = "css/light-mode/audio-player.css";
+                  themeToggle.src = "Images/light-dark/theme-light.svg";
+              } else {
+                  mainStylesheet.href = "css/index.css";
+                  secStylesheet.href = "css/audio-player.css";
+                  themeToggle.src = "Images/light-dark/theme-dark.svg";
+              }
+          }
+      
+          themeToggle.addEventListener('click', toggleTheme);
+      </script>
+        <script>
+          const audio = document.getElementById("song");
+          const playBtn = document.getElementById("ctrlIcon");
+          const progress = document.getElementById("progress");
+
+          function playPause() {
+            if (audio.paused) {
+              audio.play();
+              playBtn.classList.replace("fa-play", "fa-pause");
+            } else {
+              audio.pause();
+              playBtn.classList.replace("fa-pause", "fa-play");
+            }
+          }
+
+          audio.ontimeupdate = () => {
+            const percentage = (audio.currentTime / audio.duration) * 100;
+            progress.value = percentage || 0;
+          };
+
+          progress.oninput = () => {
+            audio.currentTime = (progress.value / 100) * audio.duration;
+          };
+        </script>
 
         <div class="quote-container">
           <h2 id="quote"></h2>
