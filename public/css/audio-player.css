@@ -1,0 +1,84 @@
+.cover-image{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.audio-name{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    height: fit-content;
+    margin: 3px 10px 0px 0px;
+    padding-top: 15px;
+    width: fit-content;
+}
+
+.audio-artist-name{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    height: fit-content;
+    margin: 0px 10px 0px 0px;
+    padding-top: 5px;
+    font-size: small;
+    width: fit-content;
+}
+
+.audio-item-div{
+    width: 98%;
+    display: flex;
+    justify-content: left;
+    /* transition: background-color 0.8s; */
+    border-radius: 5px;
+}
+
+.audio-item-div:hover{
+    background-color: hsla(0,0%,100%,.3);
+}
+
+.audio-items-name-div{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.audio-controls-div{
+    width: fit-content;
+    float: left;
+}
+
+.audio-item-div-container{
+    display: flex;
+    justify-content: center;
+}
+
+.audio-player-div{
+    width: 98%;
+    display: flex;
+    justify-content: left;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.audio-player-div-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+}
+
+.audio-control-icons{
+    width: 40px;
+    height: 40px;
+    margin: 20px 10px 20px 0px;
+}
+
+.audio-control-play{
+    width: 50px;
+    height: 47px;
+    margin: 20px 0px 20px 0px;
+}

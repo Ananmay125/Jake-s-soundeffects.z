@@ -24,6 +24,14 @@
       const audio = document.getElementById("sigma")
       const button = document.getElementById("sigmabutton")
       
-      button
+      button.addEventListener("click" , function(){
+        if (audio.paused){
+          audio.play();
+          button.style.backgroundImage("url('Images/audio-player/pause.png')");
+        }else{
+          audio.pause();
+          button.style.backgroundImage("url('Images/audio-player/play.png')");
+        }
+      })
     </script>
   </body>
