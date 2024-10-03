@@ -1,6 +1,10 @@
 const express = require('express');
+const mongoose = require('mongoose');
+require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+const mongoURI = process.env.MONGODB_URI;
 
 app.use(express.static('public'));
 
@@ -35,6 +39,15 @@ app.get('/about_us', (req, res)=>{
 app.get('/license', (req, res)=>{
     res.sendFile(__dirname + "/license.html");
 });
+
+// mongodb connection
+mongoose.connect(mongoURI)
+  .then(() => {
+    console.log('Connected to MongoDB Atlas');
+  })
+  .catch((error) => {
+    console.error('Error connecting to MongoDB:', error);
+  });
 
 app.listen(PORT, (error) =>{
     if(!error)

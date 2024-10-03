@@ -356,14 +356,6 @@ a.footer{
     text-align: center;
 }
 
-body.dark-mode #themeToggle {
-    content: url('Images/light-dark/theme-dark.svg');
-}
-
-#themeToggle {
-    content: url('Images/light-dark/theme-light.svg');
-}
-
 @media screen and (max-width: 1000px) {
     .search-box{
         display: none;

@@ -20,7 +20,7 @@
         <li class="ul-list"><a href="/trending">Trending</a></li>
         <li class="ul-list"><a href="/most_listened">Most Listened</a></li>
         <li class="ul-list"><a href="/legacy">Legacy Music</a></li>
-        <img class="mode" id="themeToggle" src="Images/light-dark/theme-light.svg" alt="dark-light-mode">
+        <img class="mode" src="Images/light-dark/theme-light.svg" id="themeToggle" alt="dark-light-mode">
         <input class="search-box" type="text" placeholder="Search..">
       </ul>
       <ul class="responsive-ul">
@@ -64,54 +64,6 @@
             <input type="range" value="0" id="progress" min="0" max="100">            
           </div>
         </div>
-
-        <script>
-          // Get the toggle button (mode2 image)
-          const themeToggle = document.getElementById('themeToggle');
-          const mainStylesheet = document.getElementById('main-stylesheet');
-          const secStylesheet = document.getElementById('sec-stylesheet');
-      
-          // Function to toggle dark mode
-          function toggleTheme() {
-              document.body.classList.toggle('dark-mode');
-      
-              if (document.body.classList.contains('dark-mode')) {
-                  mainStylesheet.href = "css/light-mode/index.css";
-                  secStylesheet.href = "css/light-mode/audio-player.css";
-                  themeToggle.src = "Images/light-dark/theme-light.svg";
-              } else {
-                  mainStylesheet.href = "css/index.css";
-                  secStylesheet.href = "css/audio-player.css";
-                  themeToggle.src = "Images/light-dark/theme-dark.svg";
-              }
-          }
-      
-          themeToggle.addEventListener('click', toggleTheme);
-      </script>
-        <script>
-          const audio = document.getElementById("song");
-          const playBtn = document.getElementById("ctrlIcon");
-          const progress = document.getElementById("progress");
-
-          function playPause() {
-            if (audio.paused) {
-              audio.play();
-              playBtn.classList.replace("fa-play", "fa-pause");
-            } else {
-              audio.pause();
-              playBtn.classList.replace("fa-pause", "fa-play");
-            }
-          }
-
-          audio.ontimeupdate = () => {
-            const percentage = (audio.currentTime / audio.duration) * 100;
-            progress.value = percentage || 0;
-          };
-
-          progress.oninput = () => {
-            audio.currentTime = (progress.value / 100) * audio.duration;
-          };
-        </script>
 
         <div class="quote-container">
           <h2 id="quote"></h2>
@@ -180,22 +132,9 @@
       </ul>
     </footer>
 
-    <script>
-      var typed = new Typed('#typed', {
-        strings: ['Peak', 'Epic', 'Elite'],
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true
-      });
-      var quote = new Typed('#quote', {
-        strings: ['"Jake Sound Effects: Where every sound tells a story"', 
-        '"Transform your audio with Jake Sound Effects—soundscapes that captivate"'],
-        typeSpeed: 40,
-        backSpeed: 40,
-        loop: true
-      });
-    </script>
-
+    <script src="scripts/dark-light.js"></script>
+    <script src="scripts/typed.js"></script>
+    <script src="scripts/sidepanel-player.js"></script>
   </body>
 </html>
 
