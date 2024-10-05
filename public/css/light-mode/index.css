@@ -373,6 +373,10 @@ a.footer{
     .Welcome-text{
         margin-left: 0;
     }
+
+    .quote-container{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 790px) {

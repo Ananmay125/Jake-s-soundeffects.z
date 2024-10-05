@@ -38,7 +38,7 @@
         </div>
         <div class="audio-controls-div">
           <img class="audio-control-play" src="Images/audio-player/play.png">
-          <img class="audio-control-icons" src="Images/audio-player/dots.png">
+          <img class="audio-control-icons-2" src="Images/audio-player/dots.png">
         </div>
       </div>
     </div>
@@ -78,9 +78,14 @@
                   <p class="audio-name">Jake is a guay negar</p>
                   <p class="audio-artist-name">Aizen, Suno AI</p>
                 </div>
-                <img class="audio-control-play" src="Images/audio-player/play.png">
+                <div class="play-div-container">
+                  <div class="play-div" onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon-1"></i></div>
+                </div>
                 <img class="audio-control-icons" src="Images/audio-player/dots.png">
               </div>
+              <audio id="song">
+                <source src="audio/suno_ai/jake is a guay negar (1).mp3" type="audio/mpeg">
+              </audio>
             </div>
             
             <div class="audio-item-div-container">
@@ -90,9 +95,14 @@
                   <p class="audio-name">Jake's Journey</p>
                   <p class="audio-artist-name">Suno AI</p>
                 </div>
-                <img class="audio-control-play" src="Images/audio-player/play.png">
+                <div class="play-div-container">
+                  <div class="play-div" onclick="playPause2()"><i class="fa-solid fa-play" id="ctrlIcon-2"></i></div>
+                </div>
                 <img class="audio-control-icons" src="Images/audio-player/dots.png">
               </div>
+              <audio id="song-2">
+                <source src="audio/suno_ai/Jake's Journey (1).mp3" type="audio/mpeg">
+              </audio>
             </div>
 
             <div class="audio-item-div-container">
@@ -102,7 +112,12 @@
                   <p class="audio-name">Jake is guay niquer (pop edition)</p>
                   <p class="audio-artist-name">Aizen, Suno AI</p>
                 </div>
-                <img class="audio-control-play" src="Images/audio-player/play.png">
+                <audio id="song-3">
+                  <source src="audio/suno_ai/jake is a guay negar.mp3" type="audio/mpeg">
+                </audio>
+                <div class="play-div-container">
+                  <div class="play-div" onclick="playPause3()"><i class="fa-solid fa-play" id="ctrlIcon-3"></i></div>
+                </div>
                 <img class="audio-control-icons" src="Images/audio-player/dots.png">
               </div>
             </div>
@@ -114,7 +129,12 @@
                   <p class="audio-name">Jake is free</p>
                   <p class="audio-artist-name">Radiclies, Suno AI</p>
                 </div>
-                <img class="audio-control-play" src="Images/audio-player/play.png">
+                <audio id="song-4">
+                  <source src="audio/suno_ai/Jake is Free (1).mp3" type="audio/mpeg">
+                </audio>
+                <div class="play-div-container">
+                  <div class="play-div" onclick="playPause4()"><i class="fa-solid fa-play" id="ctrlIcon-4"></i></div>
+                </div>
                 <img class="audio-control-icons" src="Images/audio-player/dots.png">
               </div>
             </div>
@@ -135,6 +155,7 @@
     <script src="scripts/dark-light.js"></script>
     <script src="scripts/typed.js"></script>
     <script src="scripts/sidepanel-player.js"></script>
+    <script src="scripts/player.js"></script>
   </body>
 </html>
 

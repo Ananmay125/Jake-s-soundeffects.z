@@ -75,6 +75,12 @@
 .audio-control-icons{
     width: 30px;
     height: 30px;
+    margin: 20px 10px 20px 30px;
+}
+
+.audio-control-icons-2{
+    width: 30px;
+    height: 30px;
     margin: 20px 10px 20px 0px;
 }
 
@@ -82,4 +88,28 @@
     width: 40px;
     height: 37px;
     margin: 20px 0px 20px 0px;
+}
+
+.play-div{
+    width: 5px;
+    height: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 10px 0px 10px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+}
+
+.play-div i{
+    transform: scale(1.1);
+    color: white;
+}
+
+.play-div-container{
+    margin-top: 0;
+    width: 40px;
+    height: 37px;
 }
