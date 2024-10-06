@@ -392,10 +392,14 @@ a.footer{
     .heading-nav{
         text-align: center;
         margin-left: 112px;
+        font-family: Caveat;
+        font-size: 30px;
+        height: 40px;
     }
 
     ul{
         width: 100%;
+        height: 60px;
     }
 
     .ul-icon{
