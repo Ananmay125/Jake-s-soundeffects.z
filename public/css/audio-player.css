@@ -104,11 +104,7 @@
 .audio-list-audio{
     margin: 15px 6px 0px 5px;
     height: 40px;
-    width: 90%;
-}
-
-.audio-list-audio-div{
-    width: 100%;
+    width: 70%;
 }
 
 @media screen and (max-width: 750px) {
@@ -164,13 +160,6 @@
 
     .audio-control-icons{
         display: none;
-    }
-
-    .audio-list-audio-div{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
     }
 
     .audio-list-audio{
