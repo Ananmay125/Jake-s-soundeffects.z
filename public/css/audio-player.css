@@ -26,6 +26,17 @@
     width: fit-content;
 }
 
+.audio-artist-name-player{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    height: fit-content;
+    margin: 0px 10px 0px 0px;
+    padding-top: 5px;
+    font-size: small;
+    width: fit-content;
+}
+
 .audio-item-div{
     width: 98%;
     display: flex;
@@ -75,7 +86,7 @@
 .audio-control-icons{
     width: 30px;
     height: 30px;
-    margin: 20px 10px 20px 30px;
+    margin: 20px 10px 20px 10px;
 }
 
 .audio-control-icons-2{
@@ -90,26 +101,87 @@
     margin: 20px 0px 20px 0px;
 }
 
-.play-div{
-    width: 5px;
-    height: 5px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px 10px 0px 10px;
-    padding: 20px;
-    cursor: pointer;
-    background-color: rebeccapurple;
-    border-radius: 50%;
+.audio-list-audio{
+    margin: 15px 6px 0px 5px;
+    height: 40px;
+    width: 90%;
 }
 
-.play-div i{
-    transform: scale(1.1);
-    color: white;
+.audio-list-audio-div{
+    width: 100%;
 }
 
-.play-div-container{
-    margin-top: 0;
-    width: 40px;
-    height: 37px;
+@media screen and (max-width: 750px) {
+    
+    .audio-artist-name{
+        display: none;
+    }
+
+    .audio-name{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    audio::-webkit-media-controls-play-button{
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .audio-control-icons-2{
+        display: none;
+    }
+    audio::-webkit-media-controls {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cover-image{
+        width: 70%;
+        height: fit-content;
+        border-radius: 15px;
+    }
+
+    .audio-name{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .audio-item-div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    .audio-player-div-container{
+        display: none;
+    }
+
+    .audio-control-icons{
+        display: none;
+    }
+
+    .audio-list-audio-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .audio-list-audio{
+        width: 90%;
+    }
+
+    audio::-webkit-media-controls{
+        visibility: visible;
+    }
+
+    input{
+        margin: 0px;
+    }
 }
