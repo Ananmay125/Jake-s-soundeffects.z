@@ -107,6 +107,10 @@
     width: 70%;
 }
 
+audio::-webkit-media-controls-play-button{
+    background-color: red;
+}
+
 @media screen and (max-width: 750px) {
     
     .audio-artist-name{
@@ -116,6 +120,10 @@
     .audio-name{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .audio-item-div:hover{
+        background-color: transparent;
     }
 }
 
@@ -145,6 +153,7 @@
     .audio-name{
         margin: 0px;
         padding: 0px;
+        font-family: Caveat;
     }
 
     .audio-item-div{
