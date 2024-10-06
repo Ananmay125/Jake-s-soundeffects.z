@@ -409,6 +409,24 @@ a.footer{
     .mode2{
         display: block;
     }
+
+    .heading-nav{
+        font-family: Caveat;
+        font-size: 30px;
+        height: 40px;
+    }
+
+    ul{
+        height: 60px;
+    }
+
+    .mode2{
+        margin-top: 20px;
+    }
+
+    .ul-icon{
+        margin-top: 18px;
+    }
 }
 
 @media screen and (max-width: 750px) {
