@@ -153,6 +153,7 @@ audio::-webkit-media-controls-play-button{
     .audio-name{
         margin: 0px;
         padding: 0px;
+        font-size: 20px;
         font-family: Afacad Flux;
     }
 
