@@ -404,6 +404,7 @@ a.footer{
 
     .ul-icon{
         display: block;
+        margin-top: 18px;
     }
 
     .responsive-ul{
@@ -416,10 +417,6 @@ a.footer{
 
     .mode2{
         margin-top: 20px;
-    }
-
-    .ul-icon{
-        margin-top: 18px;
     }
 }
 
