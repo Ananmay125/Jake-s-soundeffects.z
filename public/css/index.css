@@ -114,7 +114,7 @@ ul{
     width: 130px;
     height: 130px;
     margin: 20px 50px 20px 50px;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 .audio-name-side-panel{
