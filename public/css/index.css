@@ -287,15 +287,36 @@ span{
 
 footer{
     width: 100%;
-    height: 170px;
+    height: 260px;
     padding-top: 30px;
     padding-bottom: 50px;
     background-color: black;
 }
 
 .footer-list-container{
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-list-container-2{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: center;
+}
+
+.footer-list-container-div{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.footer-list-container-div .footer-list-container-div-2{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-list{
@@ -312,12 +333,9 @@ footer{
     text-align: center;
 }
 
-.footer-heading-div{
-    width: 100%;
-}
-
 a.footer{
-    color: white;;
+    color: white;
+    margin-bottom: 15px;
 }
 
 .top-text{

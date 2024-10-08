@@ -38,6 +38,10 @@ app.get('/license', (req, res)=>{
     res.sendFile(__dirname + "/license.html");
 });
 
+app.get('/Contact-us', (req, res)=>{
+    res.sendFile(__dirname + "/contact.html");
+});
+
 app.get('/login', (req, res)=>{
     res.sendFile(__dirname + "/login.html");
 });
